@@ -1,0 +1,40 @@
+{
+  "name": "canteen-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Cloud-Based Canteen Pre-Order & Token Management System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:init": "node src/scripts/initDb.js",
+    "seed:owner": "node src/scripts/seedOwner.js",
+    "reset:owner": "node src/scripts/seedOwner.js",
+    "owner:status": "node src/scripts/seedOwner.js --status",
+    "seed:admin": "node src/scripts/seedOwner.js",
+    "migrate:role": "node src/scripts/migrateRole.js"
+  },
+  "keywords": [
+    "canteen",
+    "token-management",
+    "express",
+    "mysql",
+    "jwt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.1",
+    "pdfkit": "^0.20.2",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
